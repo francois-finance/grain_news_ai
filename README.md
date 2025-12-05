@@ -1,11 +1,11 @@
-📈 Grain News AI
+Grain News AI
 
 Automated Intelligence Pipeline for Global Grain Markets (Wheat · Corn · Soy)
 Real-time news ingestion • LLM analytics • Macro scoring • Price impact estimates • Alerts • Backtesting
 
 ⸻
 
-🚀 Overview
+Overview
 
 Grain News AI is a fully automated intelligence system designed to extract actionable trading signals from global agricultural news flows.
 
@@ -15,15 +15,15 @@ It also includes a lightweight historical backtester to evaluate the predictive 
 
 ⸻
 
-✨ Key Features
+Key Features
 
-🔍 1. Multi-source News Scraping
+1. Multi-source News Scraping
 	•	Dozens of configurable sources
 	•	Grains → Wheat, Corn, Soy
 	•	Macro → Weather, FX, Energy, Shipping, Geopolitics
 	•	Automatic date filtering (≤ 6 months)
 
-🧠 2. LLM-Enhanced Analytics
+2. LLM-Enhanced Analytics
 
 For each article, the system extracts:
 	•	Market sentiment (bullish / bearish / neutral)
@@ -34,14 +34,14 @@ For each article, the system extracts:
 	•	Commodity classification
 	•	Event type (supply, demand, logistics, weather, policy…)
 
-🚨 3. Early-Warning Signal Engine
+3. Early-Warning Signal Engine
 
 Articles are scored for:
 	•	Severity of risk
 	•	Trigger keywords (frost, drought, strikes, export bans, BRL volatility…)
 	•	Alerts: INFO → WATCH → CRITICAL
 
-🧭 4. Macro-Grains Indicator
+4. Macro-Grains Indicator
 
 A synthetic score (0 to 5):
 	•	Weather impact
@@ -52,7 +52,7 @@ A synthetic score (0 to 5):
 
 Including a daily graphic of macro scores.
 
-📊 5. Automatic Daily Report
+5. Automatic Daily Report
 
 Generated as Markdown:
 	•	Macro score summary
@@ -63,7 +63,7 @@ Generated as Markdown:
 	•	Macro-theme breakdown
 	•	Backtest performance section (optional)
 
-📉 6. Backtester (optional)
+6. Backtester (optional)
 	•	Fetches futures prices via Yahoo Finance
 	•	Computes forward returns (1–20 days)
 	•	Evaluates signal quality:
@@ -74,7 +74,7 @@ Generated as Markdown:
 
 ⸻
 
-🗂 Project Structure
+Project Structure
 grain_news_ai/
 │
 ├── configs/
@@ -103,7 +103,7 @@ grain_news_ai/
 ├── reports/                       # Auto-generated daily reports
 └── README.md
 
-⚙️ Installation
+Installation
 
 1. Clone the repo
 git clone https://github.com/francois-finance/grain_news_ai.git
@@ -115,9 +115,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 4. Configure your API keys
 GROQ_API_KEY=your_key_here
-▶️ Running the Daily Pipeline
+Running the Daily Pipeline
 python -m src.main_daily
-📉 Running the Backtest
+Running the Backtest
 python -m src.backtest
 Output is saved to:
 data/backtest_summary.json

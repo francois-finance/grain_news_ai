@@ -1,0 +1,363 @@
+sources:
+  grains:
+    # === FAO / Institutions globales ===
+    - name: FAO_Cereal_Supply_Demand_EN
+      type: html
+      url: "https://www.fao.org/worldfoodsituation/csdb/en/"
+      tags: ["global", "grains", "wheat", "corn", "rice"]
+
+    - name: FAO_Cereal_Supply_Demand_FR
+      type: html
+      url: "https://www.fao.org/worldfoodsituation/csdb/fr"
+      tags: ["global", "grains", "wheat", "corn", "rice"]
+
+    - name: IGC_Grain_Market_Report
+      type: html
+      url: "https://www.igc.int/en/markets/marketreport.aspx"
+      tags: ["global", "grains", "wheat", "corn", "soy"]
+
+    # === USDA / US ===
+    - name: USDA_WASDE_Intro_Page
+      type: html
+      url: "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report"
+      tags: ["us", "grains", "wheat", "corn", "soy"]
+
+    - name: USDA_WASDE_Data
+      type: html
+      url: "https://www.fas.usda.gov/data/wasde"
+      tags: ["us", "grains", "wheat", "corn", "soy"]
+
+    - name: USDA_ERS_Crops
+      type: html
+      url: "https://www.ers.usda.gov/topics/crops/"
+      tags: ["us", "grains", "wheat", "corn", "rice"]
+
+    # === US Local / Midwest / Corn Belt ===
+    - name: Kansas_Wheat_RecentNews
+      type: html
+      url: "https://kswheat.com/recent-news-stories"
+      tags: ["us", "wheat", "kansas"]
+
+    - name: Kansas_Wheat_AgConnection
+      type: html
+      url: "https://kansasagconnection.com/news/crops/wheat"
+      tags: ["us", "wheat", "kansas"]
+
+    - name: AgManager_WASDE_Grains
+      type: html
+      url: "https://www.agmanager.info/grain-marketing/grain-supply-and-demand-wasde"
+      tags: ["us", "grains", "wheat", "corn", "soy"]
+
+    - name: FarmProgress
+      type: html
+      url: "https://www.farmprogress.com/"
+      tags: ["us", "corn", "soy", "wheat", "weather"]
+
+    - name: AgWeb_FarmJournal
+      type: html
+      url: "https://www.agweb.com/"
+      tags: ["us", "grains", "market"]
+
+    - name: DTN_ProgressiveFarmer
+      type: html
+      url: "https://www.dtnpf.com/agriculture/web/ag"
+      tags: ["us", "weather", "corn", "soy"]
+
+    - name: FarmBureau_News
+      type: html
+      url: "https://www.fb.org/newsroom/"
+      tags: ["us", "policy", "grains"]
+
+    - name: Illinois_Farm_News
+      type: html
+      url: "https://www.farmweeknow.com/"
+      tags: ["us", "corn", "soy", "illinois"]
+
+    - name: Iowa_Ag_News
+      type: html
+      url: "https://www.iowaagribusinessradionetwork.com/"
+      tags: ["us", "corn", "soy"]
+
+    # === Brésil (maïs / soja / blé) ===
+    - name: Brasil_Conab_News
+      type: html
+      url: "https://www.conab.gov.br/ultimas-noticias"
+      tags: ["brazil", "grains", "corn", "soy"]
+
+    - name: Brasil_Conab_Graos
+      type: html
+      url: "https://www.conab.gov.br/info-agro/safras"
+      tags: ["brazil", "grains", "corn", "soy"]
+
+    - name: NoticiasAgricolas_Graos
+      type: html
+      url: "https://www.noticiasagricolas.com.br/noticias/graos/"
+      tags: ["brazil", "grains", "corn", "soy", "wheat"]
+
+    - name: Globo_Rural
+      type: html
+      url: "https://g1.globo.com/economia/agronegocios/"
+      tags: ["brazil", "grains", "soy", "corn", "weather"]
+
+    - name: Canal_Rural
+      type: html
+      url: "https://www.canalrural.com.br/noticias/"
+      tags: ["brazil", "grains", "corn", "soy"]
+
+    - name: Embrapa_News
+      type: html
+      url: "https://www.embrapa.br/busca-de-noticias"
+      tags: ["brazil", "research", "weather", "soy", "corn"]
+
+    - name: IMEA_Corn_Soy
+      type: html
+      url: "https://www.imea.com.br/imea-site/indicadores-mercado"
+      tags: ["brazil", "corn", "soy", "market"]
+
+    - name: Correio_do_Povo_Agro
+      type: html
+      url: "https://www.correiodopovo.com.br/agronegocios"
+      tags: ["brazil", "grains"]
+
+    # === Argentine (blé / soja / maïs) ===
+    - name: Agrofy_Argentina_News
+      type: html
+      url: "https://news.agrofy.com.ar/"
+      tags: ["argentina", "grains", "corn", "soy", "wheat"]
+
+    - name: BolsaCereales_BA
+      type: html
+      url: "https://www.bolsadecereales.com/"
+      tags: ["argentina", "grains", "wheat", "corn"]
+
+    - name: Clarin_Rural
+      type: html
+      url: "https://www.clarin.com/rural/"
+      tags: ["argentina", "grains", "wheat", "corn", "soy"]
+
+    - name: Infocampo
+      type: html
+      url: "https://www.infocampo.com.ar/"
+      tags: ["argentina", "agri", "grains"]
+
+    - name: AgroVoz
+      type: html
+      url: "https://www.lavoz.com.ar/agro/"
+      tags: ["argentina", "wheat", "corn", "soy"]
+
+    - name: Bichos_de_Campo
+      type: html
+      url: "https://bichosdecampo.com/"
+      tags: ["argentina", "agri"]
+
+    - name: RevistaChacra
+      type: html
+      url: "https://www.revistachacra.com.ar/seccion/agricultura"
+      tags: ["argentina", "grains"]
+
+    - name: BolsaRosario
+      type: html
+      url: "https://www.bcr.com.ar/es/mercados"
+      tags: ["argentina", "market", "grains"]
+
+    # === Ukraine ===
+    - name: Latifundist_Ukraine
+      type: html
+      url: "https://latifundist.com/"
+      tags: ["ukraine", "grains", "logistics"]
+
+    - name: Agravery_Ukraine
+      type: html
+      url: "https://agravery.com/uk"
+      tags: ["ukraine", "wheat", "corn"]
+
+    - name: APK_Inform
+      type: html
+      url: "https://www.apk-inform.com/en"
+      tags: ["ukraine", "market", "grains"]
+
+    - name: MinAgro_Ukraine
+      type: html
+      url: "https://minagro.gov.ua/en"
+      tags: ["ukraine", "policy", "grains"]
+
+    # === Russie ===
+    - name: Agroinvestor_Russia
+      type: html
+      url: "https://www.agroinvestor.ru/news/"
+      tags: ["russia", "wheat", "barley"]
+
+    - name: ZernoOnLine_Russia
+      type: html
+      url: "https://www.zol.ru/"
+      tags: ["russia", "grains"]
+
+    - name: AgriNews_Russia
+      type: html
+      url: "https://agrinews.ru/"
+      tags: ["russia", "wheat", "grains"]
+
+    # === Chine / Asie ===
+    - name: China_AgriMOA
+      type: html
+      url: "http://www.moa.gov.cn/"
+      tags: ["china", "policy", "corn", "soy", "grains"]
+
+    - name: Sina_Finance_Agri
+      type: html
+      url: "https://finance.sina.com.cn/stock/usstock/futures/"
+      tags: ["china", "market", "grains"]
+
+    # === Europe (France / Espagne / etc.) ===
+    - name: Agroinformacion_Spain
+      type: html
+      url: "https://agroinformacion.com/"
+      tags: ["spain", "agri", "grains"]
+
+    - name: FranceAgriMer
+      type: html
+      url: "https://www.franceagrimer.fr/fam/les-actualites"
+      tags: ["france", "wheat", "barley", "grains"]
+
+    - name: TerreNet
+      type: html
+      url: "https://www.terre-net.fr/actualites-agricoles/"
+      tags: ["france", "agri", "grains"]
+
+    - name: EfeAgro_Spain
+      type: html
+      url: "https://efeagro.com/"
+      tags: ["spain", "agri", "grains"]
+
+    - name: EU_DGAGRI_ShortTerm_Outlook
+      type: html
+      url: "https://agriculture.ec.europa.eu/data-and-analysis/short-term-outlook_en"
+      tags: ["eu", "grains", "wheat", "barley", "corn"]
+
+    # === Australie ===
+    - name: ABARES_Australia
+      type: html
+      url: "https://www.agriculture.gov.au/abares/news"
+      tags: ["australia", "wheat", "grains"]
+
+    - name: GrainCentral
+      type: html
+      url: "https://www.graincentral.com/"
+      tags: ["australia", "grains"]
+
+    # === Canada ===
+    - name: Canada_Grains_Council
+      type: html
+      url: "https://canadagran.org/news/"
+      tags: ["canada", "wheat", "barley", "grains"]
+
+    - name: Canadian_Farm_News
+      type: html
+      url: "https://www.producer.com/"
+      tags: ["canada", "grains"]
+
+    # === Afrique / Maghreb ===
+    - name: Afrique_Agro_Actu
+      type: html
+      url: "https://www.agenceecofin.com/agriculture"
+      tags: ["africa", "weather", "grains"]
+
+    - name: Maghreb_Agro
+      type: html
+      url: "https://www.agriculture.com.tn/"
+      tags: ["maghreb", "wheat", "grains"]
+
+  macro:
+    - name: FAO_World_Food_Situation
+      type: html
+      url: "https://www.fao.org/worldfoodsituation/en"
+      tags: ["global", "grains", "macro"]
+
+    - name: NOAA_Drought_Monitor
+      type: html
+      url: "https://droughtmonitor.unl.edu/"
+      tags: ["macro", "weather", "grains"]
+
+    - name: NOAA_Global_Weather
+      type: html
+      url: "https://www.noaa.gov/news"
+      tags: ["macro", "weather", "climate"]
+
+    - name: ECMWF_Weather_News
+      type: html
+      url: "https://www.ecmwf.int/en/about/media-centre/news"
+      tags: ["macro", "weather", "climate", "europe"]
+
+    - name: ENSO_Status_NOAA
+      type: html
+      url: "https://www.climate.gov/enso"
+      tags: ["macro", "climate", "enso"]
+
+  fx:
+    - name: FX_USD_Index
+      type: html
+      url: "https://www.investing.com/indices/us-dollar-index"
+      tags: ["macro", "fx", "usd"]
+
+    - name: FX_BRL_USD
+      type: html
+      url: "https://www.investing.com/currencies/usd-brl"
+      tags: ["macro", "fx", "brl", "brazil"]
+
+    - name: FX_ARS_USD
+      type: html
+      url: "https://www.investing.com/currencies/usd-ars"
+      tags: ["macro", "fx", "ars", "argentina"]
+
+  energy:
+    - name: Energy_Brent
+      type: html
+      url: "https://www.investing.com/commodities/brent-oil"
+      tags: ["macro", "energy", "oil"]
+
+  shipping:
+    - name: Shipping_News_Splash247
+      type: html
+      url: "https://splash247.com/category/news/"
+      tags: ["macro", "shipping", "logistics"]
+
+    - name: Black_Sea_Grain_Corridor
+      type: html
+      url: "https://www.blackseagrain.net/"
+      tags: ["macro", "grains", "blacksea", "shipping"]
+
+    - name: MarineTraffic_News
+      type: html
+      url: "https://www.marinetraffic.com/blog/category/news/"
+      tags: ["shipping", "logistics"]
+
+    - name: DryBulk_News
+      type: html
+      url: "https://www.drybulkmagazine.com/"
+      tags: ["shipping", "bulk", "grains"]
+
+  geopolitics:
+    - name: Ukraine_Agri_World
+      type: html
+      url: "https://www.ukrinform.net/rubric-economy"
+      tags: ["macro", "ukraine", "grains", "economy"]
+
+    - name: Russia_Agri_News
+      type: html
+      url: "https://www.interfax.ru/business/"
+      tags: ["macro", "russia", "business", "grains"]
+
+    - name: Argentina_Agri_Policy
+      type: html
+      url: "https://www.lanacion.com.ar/economia/campo/"
+      tags: ["macro", "argentina", "policy", "grains"]
+
+    - name: Brazil_Agri_Policy
+      type: html
+      url: "https://www.gov.br/agricultura/pt-br/assuntos"
+      tags: ["macro", "brazil", "policy", "grains"]
+
+    - name: Xinhua_Agri
+      type: html
+      url: "https://www.xinhuanet.com/english/business/"
+      tags: ["china", "macro", "business", "grains"]
